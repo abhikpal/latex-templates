@@ -82,23 +82,21 @@
 \renewcommand{\headrulewidth}{0pt}
 \pagestyle{fancy}
 
-\hypersetup{ %
+\AtBeginDocument{%
+  \hypersetup{ %
     pdfauthor   = {\theauthor},
     pdftitle    = {Homework \thehwnum: \thecoursename (\thecourseterm)},
     pdfcreator  = {LaTeX with hyperref package},
     pdfproducer = {pdflatex + auctex}
-}
+  }
 
 
-% -- new stuff
-
-\AtBeginDocument{%
   \thispagestyle{empty}
   \begin{raggedright}
-  \textbf{\large Homework \thehwnum} \\
-  \textbf{\large \emph{\thecoursename (\thecourseterm)}} \\[2em]
-  \theauthor \\
-  \texttt{\theauthoremail} \vspace*{2em}
+    \textbf{\large Homework \thehwnum} \\
+    \textbf{\large \emph{\thecoursename (\thecourseterm)}} \\[2em]
+    \theauthor \\
+    \texttt{\theauthoremail} \vspace*{2em}
   \end{raggedright}
 }
 
