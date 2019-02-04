@@ -94,7 +94,7 @@
   \thispagestyle{empty}
   \begin{raggedright}
     \textbf{\large Homework \thehwnum} \\
-    \textbf{\large \emph{\thecoursename (\thecourseterm)}} \\[2em]
+    \textbf{\large \emph{\thecoursename\ (\thecourseterm)}} \\[2em]
     \theauthor \\
     \texttt{\theauthoremail} \vspace*{2em}
   \end{raggedright}
